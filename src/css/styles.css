@@ -1,14 +1,20 @@
-/* ---------------------------- RESET STYLES -------------------------------------*/
+/* ---------------------------- COMMON -------------------------------------*/
 
 body {
   margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(75, 165, 243);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
+  line-height: 1.2;
+  height: 100vh;
+  background-color: blueviolet;
+  background-image: url('../images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -49,7 +55,127 @@ img {
   margin: 0 auto;
 }
 
+.accent-color {
+  color: rgb(255, 150, 12);
+}
+
 /* ---------------------------- MOBILE -------------------------------------*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 15px;
+  position: relative;
+  height: 150px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: translateX(-120px);
+  border: none;
+}
+
+.menu {
+  transform: translateY(-20px);
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.menu li:active {
+  color: rgb(255, 150, 12);
+}
+
+.language {
+  position: absolute;
+  display: inline-block;
+  transform: translate(110px, -150px);
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.language:active {
+  color: rgb(255, 150, 12);
+  border-color: rgb(255, 150, 12);
+}
+
+section {
+  margin: 30px auto;
+}
+
+h1 {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 32px;
+  width: 250px;
+  background-color: blueviolet;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px blueviolet;
+}
+
+.hero-section p {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0 auto;
+  border: none;
+  color: whitesmoke;
+  background-color: rgb(255, 150, 12);
+  padding: 15px;
+  border-radius: 20px;
+  outline: none;
+}
+
+button:active {
+  background-color: rgba(255, 140, 0, 0.902);
+}
+
+.currencies-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.currencies-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(255, 150, 12);
+}
+
+.currencies-list span {
+  color: white;
+}
+
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0 0 5px 3px rgb(255, 150, 12);
+  }
+  50% {
+    box-shadow: 0 0 10px 6px rgb(255, 150, 12);
+  }
+  100% {
+    box-shadow: 0 0 5px 3px rgb(255, 150, 12);
+  }
+}
+
+.shadow-animation {
+  animation: shadowAnimation 2s infinite;
+}
 
 /* ----------------------------TABLET -------------------------------------*/
 
