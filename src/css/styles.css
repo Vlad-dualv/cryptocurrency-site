@@ -256,7 +256,7 @@ button:active {
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 60%;
+    min-width: 60%;
     position: relative;
   }
 
@@ -271,10 +271,12 @@ button:active {
   }
 
   .logo {
+    position: absolute;
     transform: translateX(0px);
+    top: 0;
+    left: -30px;
     width: 70px;
     height: 70px;
-    margin-right: 20px;
   }
 
   .menu {
@@ -284,13 +286,38 @@ button:active {
     align-items: center;
   }
 
-  .menu li {
-    font-size: 22px;
-    padding: 10px;
+  a {
+    padding: 20px;
   }
 
-  .menu li:active {
+  .menu li {
+    font-size: 22px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+  }
+
+  .menu li:hover,
+  .menu li:focus {
     color: rgb(255, 150, 12);
+  }
+
+  .menu li::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    left: 30px;
+    bottom: 0px;
+    background-color: rgb(255, 150, 12);
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+  }
+
+  .menu li:hover::after,
+  .menu li:focus::after {
+    width: 70%;
+    opacity: 1;
   }
 
   .language {
@@ -300,28 +327,38 @@ button:active {
     padding: 15px;
     top: 0;
     right: 0;
+    transition: all 200ms ease-in-out;
+  }
+
+  .language:hover,
+  .language:focus {
+    color: rgb(255, 150, 12);
+    border-color: rgb(255, 150, 12);
   }
 
   section {
-    margin: 70px auto;
+    margin: 130px auto;
+    text-align: left;
   }
 
   h1 {
-    font-size: 48px;
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
+    font-size: 86px;
+    min-width: 400px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 0;
   }
 
   .hero-section p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 
   button {
-    padding: 25px;
-    border-radius: 30px;
-    font-size: 16px;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 22px;
+    margin-left: 0;
   }
 
   .currencies-list {
