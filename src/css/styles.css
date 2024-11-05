@@ -68,7 +68,6 @@ img {
 
 header {
   padding-top: 15px;
-  position: relative;
   height: 150px;
 }
 
@@ -94,7 +93,6 @@ header {
 }
 
 .language {
-  position: absolute;
   display: inline-block;
   transform: translate(110px, -150px);
   padding: 5px;
@@ -179,4 +177,168 @@ button:active {
 
 /* ----------------------------TABLET -------------------------------------*/
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+
+  header {
+    padding-top: 30px;
+    height: 200px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    transform: translateX(-300px);
+  }
+
+  .menu {
+    transform: translateY(-40px);
+  }
+
+  .menu li {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .menu li:active {
+    color: rgb(255, 150, 12);
+  }
+
+  .language {
+    transform: translate(280px, -220px);
+    padding: 10px;
+  }
+
+  section {
+    margin: 70px auto;
+  }
+
+  h1 {
+    font-size: 48px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .currencies-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .currencies-list li {
+    font-size: 16px;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .currencies-list img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* ---------------------------- DESKTOP -------------------------------------*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 60%;
+    position: relative;
+  }
+
+  header {
+    padding-top: 50px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .logo {
+    transform: translateX(0px);
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .menu {
+    transform: translateY(0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu li {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .menu li:active {
+    color: rgb(255, 150, 12);
+  }
+
+  .language {
+    position: absolute;
+    transform: translate(0);
+    font-size: 18px;
+    padding: 15px;
+    top: 0;
+    right: 0;
+  }
+
+  section {
+    margin: 70px auto;
+  }
+
+  h1 {
+    font-size: 48px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .currencies-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .currencies-list li {
+    font-size: 16px;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .currencies-list img {
+    width: 40px;
+    height: 40px;
+  }
+}
