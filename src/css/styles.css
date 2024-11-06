@@ -337,7 +337,7 @@ button:active {
   }
 
   section {
-    margin: 130px auto;
+    margin: 90px auto;
     text-align: left;
   }
 
@@ -362,20 +362,16 @@ button:active {
   }
 
   .currencies-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
   }
 
   .currencies-list li {
-    font-size: 16px;
-    gap: 5px;
-    border-radius: 20px;
-    padding: 15px;
+    width: 120px;
   }
 
   .currencies-list img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }
