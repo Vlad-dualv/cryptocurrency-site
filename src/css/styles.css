@@ -153,6 +153,8 @@ button:active {
   border-radius: 20px;
   padding: 10px;
   color: rgb(255, 150, 12);
+  font-size: 12px;
+  width: 80px;
 }
 
 .currencies-list span {
@@ -244,6 +246,7 @@ button:active {
     gap: 5px;
     border-radius: 20px;
     padding: 15px;
+    width: 120px;
   }
 
   .currencies-list img {
@@ -367,7 +370,7 @@ button:active {
   }
 
   .currencies-list li {
-    width: 120px;
+    gap: 8px;
   }
 
   .currencies-list img {
